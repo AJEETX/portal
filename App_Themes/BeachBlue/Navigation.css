@@ -1,0 +1,69 @@
+﻿/* navigation */
+table.nav
+{
+    border-top: solid 1px #707491;
+}
+
+table.nav td
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table.nav_selected 
+{
+    background: Transparent url(_images/nav_hi_bg.jpg) repeat-y top left;
+}
+
+table.nav_selected td
+{
+    background: Transparent url(_images/img_nav_hilight.gif) no-repeat top left;
+}
+
+a.nav
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.sublevel
+{
+	/* this is a bugfix for asp:Menu in IE8 */
+	z-index: 100; 
+	position: relative;
+}
+
+table.sublevel
+{
+    border-top: solid 1px #707491;
+    background: #C7C4D5 url(_images/subnav_lo_bg.gif) repeat-y top left;
+}
+
+table.sublevel td
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table.sublevel_selected
+{
+    background: #C7C4D5 url(_images/nav_hi_bg.jpg) repeat-y top left;
+}
+
+table.sublevel_selected td
+{
+    background: Transparent url(_images/img_nav_hilight.gif) no-repeat top left;
+}
+
+a.sublevel 
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+/* end navigation */

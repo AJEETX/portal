@@ -1,0 +1,24 @@
+﻿body
+{
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	
+}
+
+h1
+{
+    font-size: 17px;
+}
+
+h2
+{
+    font-size: 11px;
+}
+
+a, a:visited, a:active, a:hover, a:link 
+{
+}

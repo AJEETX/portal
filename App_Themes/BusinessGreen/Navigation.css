@@ -1,0 +1,77 @@
+﻿/* navigation */
+table.nav
+{
+    width: 142px;
+}
+
+table.nav td
+{
+    padding-left: 22px;
+}
+
+table.nav_selected 
+{
+    background: Transparent url(_images/nav_bg_hi.gif) no-repeat top left;
+}
+
+a.nav, a.nav:link, a.nav:active, a.nav:visited
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: bottom;
+    color: #838080;
+}
+
+a.nav_selected, a.nav_selected:link, a.nav_selected:active, a.nav_selected:visited, a.nav:hover
+{
+    color: #333333;
+    font-weight: bold;
+}
+
+.sublevel
+{
+	/* this is a bugfix for asp:Menu in IE8 */
+	z-index: 100; 
+}
+
+table.sublevel
+{
+    background-color: #EBEDE2;
+}
+
+div.sublevel
+{
+    background-color: #EBEDE2;
+}
+
+table.sublevel td
+{
+    padding-left: 22px;
+    padding-right: 10px;
+}
+
+table.sublevel_selected
+{
+    background: Transparent url(_images/nav_bg_hi.gif) no-repeat top left;
+}
+
+a.sublevel, a.sublevel:link, a.sublevel:active, a.sublevel:visited
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: bottom;
+    color: #838080;
+}
+
+a.sublevel_selected, a.sublevel_selected:link, a.sublevel_selected:active, a.sublevel_selected:visited, a.sublevel:hover
+{
+    color: #333333;
+    font-weight: bold;
+}
+/* end navigation */

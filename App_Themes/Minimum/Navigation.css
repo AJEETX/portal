@@ -1,0 +1,48 @@
+﻿/* navigation */
+table.nav
+{
+}
+
+table.nav td
+{
+}
+
+table.nav_selected 
+{
+}
+
+table.nav_selected td
+{
+}
+
+a.nav
+{
+}
+
+.sublevel
+{
+	/* this is a bugfix for asp:Menu in IE8 */
+	z-index: 100; 
+	position: relative;
+}
+
+table.sublevel
+{
+}
+
+table.sublevel td
+{
+}
+
+table.sublevel_selected
+{
+}
+
+table.sublevel_selected td
+{
+}
+
+a.sublevel 
+{
+}
+/* end navigation */

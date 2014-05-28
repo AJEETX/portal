@@ -1,0 +1,63 @@
+﻿/* navigation */
+table.nav td
+{
+    border-right: solid 1px #999999;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+a.nav, a.nav:link, a.nav:active, a.nav:visited, a.nav:hover
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #999999;
+}
+
+a.nav:hover
+{
+    color: #FFFFFF;
+}
+
+a.nav_selected, a.nav_selected:link, a.nav_selected:active, a.nav_selected:visited, a.nav_selected:hover
+{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+div.sublevelwrapper
+{
+    border-right: solid 1px #000000;
+    border-left: solid 1px #000000;
+    border-bottom: solid 1px #000000;
+    background-color: #102D59;
+    z-index: 101;
+}
+
+.sublevel
+{
+	/* this is a bugfix for asp:Menu in IE8 */
+	z-index: 100; 
+	position: relative;
+}
+
+a.sublevel, a.sublevel:link, a.sublevel:active, a.sublevel:visited, a.sublevel:hover
+{
+    padding: 3px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #999999;
+}
+
+a.sublevel:hover
+{
+    color: #FFFFFF;
+}
+
+a.sublevel_selected, a.sublevel_selected:link, a.sublevel_selected:active, a.sublevel_selected:visited, a.sublevel_selected:hover
+{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+/* end navigation */

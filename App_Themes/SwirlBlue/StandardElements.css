@@ -1,0 +1,79 @@
+﻿html, body, form {
+	height: 100%;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+table 
+{
+    border-collapse: collapse;
+    border: none 0px;
+    padding: 0;
+    margin: 0;
+}
+
+img
+{
+    border: none 0px;
+    padding: 0;
+    margin: 0;
+}
+
+td
+{
+    vertical-align: top;
+}
+
+td.field 
+{
+    width: 300px;
+}
+
+td.fieldlabel
+{
+    width: 140px;
+    text-align: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.framed 
+{
+    background-color: #C8CFD8;
+    border: solid 1px #000000;
+    padding: 10px;
+    width: 422px;
+    color: #000000;
+}
+
+ul 
+{
+	margin-left: 30px;
+    list-style-type: square;
+    color: #3D95D8;
+}
+
+a, a:visited, a:active, a:hover, a:link 
+{
+    color: #FFFFFF;
+}
+
+.odd
+{
+    background-color: #F3F4F7;
+    color: #000000;
+}
+
+.even
+{
+    background-color: #C8CFD8;
+    color: #000000;
+}

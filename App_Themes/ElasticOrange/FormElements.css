@@ -1,0 +1,47 @@
+﻿/* form elements */
+input.button 
+{
+   color: #000000;
+   background: #663200 url(_images/but_bg.gif) repeat-x top left;
+   border: solid 1px #FFFFFF;
+   margin: 2px 0px 2px 0px;
+}
+
+input.textbox 
+{
+    width: 367px;
+    border: solid 1px #663200;
+    margin: 2px 0px 2px 0px;
+}
+
+input.textboxAdmin 
+{
+    width: 167px;
+    border: solid 1px #663200;
+    margin: 2px 0px 2px 0px;
+}
+
+textarea 
+{
+    width: 367px;
+    height: 200px;
+    border: solid 1px #663200;
+    margin: 2px 0px 2px 0px;
+}
+
+select.sel
+{
+    width: 367px;
+    border: solid 1px #663200;
+}
+
+select
+{
+    margin: 2px 0px 2px 0px;
+}
+
+.error
+{
+    color: #FF0000;
+}
+/* end formelements */

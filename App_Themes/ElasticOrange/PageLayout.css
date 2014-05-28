@@ -1,0 +1,200 @@
+﻿
+div#head
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 91px;
+    width: 100%;
+    margin-bottom: 26px;
+    border-bottom: solid 1px #663200;
+    background: #FFFFFF url(_images/header_bg.jpg) repeat-x top left;
+}
+
+div.titleBG
+{
+	 background: #FFFFFF url(_images/img_header.jpg) no-repeat top left;
+	 height: 91px;
+	 width: 542px;
+}
+
+div#websiteTitle
+{
+	position: absolute;
+	top: 38px;
+	left: 234px;
+	color: #663200;
+	font-size: 22px;
+}
+
+div#utilities
+{
+	position: absolute;
+	top: 4px;
+	right: 26px;
+}
+
+div#utilities a
+{
+    color: #666666;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+table#mainTable
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+}
+
+td#left
+{
+    width: 198px;
+}
+
+td#right
+{
+    width: 100%;
+}
+
+div#navigation
+{
+	position: relative;
+	top: 0px;
+	left: 10px;
+	color: #FFFFFF;
+}
+
+div#navigation a img
+{
+    display: none;
+}
+
+div.sidebartop 
+{
+    padding-top: 20px;
+}
+
+div.sidebar 
+{
+	position: relative;
+	top: 0px;
+	margin-left: 10px;
+    border: solid 1px #7f7f7f;
+}
+
+div.sidebar h2
+{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    height: 23px;
+    color: #663200;
+    background: #FFFFFF url(_images/title_bg.gif) repeat-x top left;
+}
+
+div.sidebar ul 
+{
+    margin: 0;
+    padding: 0;
+}
+
+div.sidebar ul li.item
+{
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    list-style-type: none;
+}
+
+div.sidebar ul li.item a 
+{
+    text-decoration: none;
+    color: #663200;
+    padding-left: 7px;
+}
+
+div.sidebar ul li.sidebaritemseparator
+{
+	list-style-type: none;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-bottom: solid 1px #7f7f7f;
+	margin-bottom: 5px;
+	width: 174px;
+	height: 5px;
+}
+
+td#right
+{
+    margin: 0;
+    padding-left: 36px;
+	padding-right: 23px;
+	padding-bottom: 20px;
+	vertical-align: top;
+	background-color: #FFFFFF;
+}
+
+div#footer
+{
+    width: 500px;
+    height: 26px;
+    padding-left: 36px;
+    padding-right: 21px;
+    padding-top: 7px;
+    font-size: 10px;
+    color: #663200;
+}
+
+div#breadcrumbs
+{
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Verdana;
+	padding-top: 2px;
+    background: #FFFFFF url(_images/title_bg.gif) repeat-x top left;
+    height: 23px;
+}
+
+div#breadcrumbs .node
+{
+    color: #663200;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+div#breadcrumbs .currentNode
+{
+    color: #663200;
+}
+
+div#breadcrumbs .separator
+{
+    color: #663200;
+    padding-right: 5px;
+}
+
+#contentContainer div.sectionsettings 
+{
+    margin-top: 11px;
+    margin-bottom: 5px;
+    background-color: #F1DCBE;
+    width: 100%;
+    /*border: solid 1px #898989;*/
+    /*padding: 3px;*/
+}
+
+#contentContainer div.sectionsettings table
+{
+
+}
+
+#contentContainer div.sectionsettings table td
+{
+	padding: 0px 18px 8px 18px;
+    vertical-align: middle;
+}

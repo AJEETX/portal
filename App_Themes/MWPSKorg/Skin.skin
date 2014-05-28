@@ -1,0 +1,239 @@
+<%@ Register TagPrefix="cc1" Namespace="MyWebPagesStarterKit.Controls" %>
+<%@ Register TagPrefix="RJS" Namespace="RJS.Web.WebControl" Assembly="RJS.Web.WebControl.PopCalendar" %>
+<cc1:TemplatedContent runat="server" SkinID="Top">
+    <ContentTemplate>
+        <!-- main menu -->
+        <div id="babkgroundImg" class="babkgroundImg"></div>
+        <div class="topBar_wrapper">
+            <div class="topBar_centered">
+                <div class="imgHomeTitle">
+                    <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~">
+                        <asp:Image ID="imgHomeTitle" runat="server" ImageUrl="_images/logo.png" />
+                    </asp:HyperLink>
+                </div>
+                <asp:Menu ID="Menu1" runat="server" StaticDisplayLevels="1" StaticTopSeparatorImageUrl="_images/img_seperator.png" MaximumDynamicDisplayLevels="0" DataSourceID="topMenuDataSource" StaticEnableDefaultPopOutImage="false" DynamicEnableDefaultPopOutImage="false" Orientation="horizontal">
+                    <StaticMenuItemStyle CssClass="nav" ItemSpacing="0" />
+                    <StaticSelectedStyle CssClass="nav_selected" />
+                    <StaticMenuStyle CssClass="nav_table" />  
+                    <StaticHoverStyle CssClass="nav_hover" />                                          
+                </asp:Menu>
+                <%--<asp:Image ID="imgLastSeparator" runat="server" CssClass="lastSeparator" ImageUrl="_images/img_seperator.png" />--%>
+                <asp:SiteMapDataSource runat="server" ID="topMenuDataSource" ShowStartingNode="false" />                     
+                <div id="utilities">
+                    <cc1:LoginStatus runat="Server" id="LoginStatus1" />&nbsp;|&nbsp;<cc1:SearchLink runat="Server" id="SearchLink1" />
+                </div>                                  
+            </div>
+        </div>
+        
+        <cc1:HomepageContent runat="server">
+            <HomepageTemplate>            
+                <div class="home_contentWrapper">
+
+                    <!--start home topbox - remove it if you don't need it-->
+                    <div class="home_topBox">
+                        <div class="home_topBox_top"></div>
+
+                        <div class="home_topBox_content">
+                            <div class="home_topBox_contentText">
+                            <!--Place your homepage topBox content here-->
+                            
+                                <img class="home_topImage" id="imgTop" src="http://www.mwpsk.org/App_Themes/MWPSKorg/_images/img_images_left.png" />
+                                <div class="home_welcomeBox">
+                                    <div class="home_textblock">
+                                        <h1>Welcome</h1>
+                                        <p><b>Please note:</b> this is a special Theme with the look and feel of the www.mwpsk.org website. In order to edit (or remove) this part (home_topBox) you have to manually <b>edit the Skin.skin file</b>. To obtain the 3 colored boxes as in the mwpsk website you need to add some HTML (you can copy and paste it from the README). Please go inside the <a href="App_Themes\MWPSKorg">App_Themes\MWPSKorg</a> folder and have a look at the <a href="App_Themes\MWPSKorg\README.txt">README</a> file for more information.</p>
+                                    </div>
+                                    <a href="http://mywebpagesstarterkit.codeplex.com" target="_blank">
+								        <div class="home_welcome_codeplexBox">
+									        <asp:Image CssClass="home_welcome_codeplexBox_logo" ID="Image1" runat="server" ImageUrl="_images/codeplex.jpg" />
+									        <div class="home_textblock home_welcome_codeplexBox_text">
+										        <p style="margin: 0px; padding: 0px;">MWPSK is open source and is a community project. Hosted at codeplex anybody can browse and change its source code. Have a look and learn about the vibrant developer community around MWPSK</p>
+                                        
+									        </div>                                
+									        <div style="float: right; margin: 30px 14px 0 0;"><asp:Image ID="imgArrow1" runat="server" ImageUrl="_images/img_arrow.png" /></div> 
+								        </div>
+                                    </a>
+                                    <p></p>
+                                </div>
+
+                            <!--End of your topBox content-->
+                            </div>
+                        </div>
+
+                        <div class="home_topBox_bottom"></div>
+                    </div>
+                    <!--end home topbox - end remove it if you don't need it-->
+                 
+                    <div class="home_bottomBox">
+					    <div class="home_bottomBox_top"></div>
+						<div class="home_content">
+							<div id="home_content_container" style="float: left;">
+        
+            </HomepageTemplate>
+            <SubpageTemplate>
+                <div align="center" class="mainWrapper">
+					<div class="mainBox_Top sectionGray">
+                        <div class="breadcrumb">
+                            <asp:SiteMapPath runat="server" ID="sitemapPath1" ShowToolTips="false">
+                                <RootNodeTemplate></RootNodeTemplate>
+                                <CurrentNodeStyle CssClass="currentNode" />
+                                <NodeStyle CssClass="node" />
+                                <PathSeparatorStyle CssClass="separator" />
+                                <PathSeparatorTemplate>&gt;</PathSeparatorTemplate>
+                            </asp:SiteMapPath>
+                        </div>  
+                    </div>
+                    <div class="mainBox_content">
+                        <div class="left_navigation">
+                            <asp:Menu ID="Menu1" runat="server" DataSourceID="menuDataSource" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="0" ItemWrap="true" DynamicHorizontalOffset="0" StaticEnableDefaultPopOutImage="false" Orientation="Vertical">
+                                <StaticMenuStyle CssClass="leftnav_table" />
+                                <StaticHoverStyle CssClass="leftnav_hover" />    
+                                <LevelMenuItemStyles>
+                                    <asp:MenuItemStyle CssClass="leftnav" />
+                                    <asp:MenuItemStyle CssClass="leftnav_submenu" />
+                                </LevelMenuItemStyles>    
+                                <LevelSelectedStyles>
+                                    <asp:MenuItemStyle CssClass="leftnav_selected" />
+                                    <asp:MenuItemStyle CssClass="leftnav_submenu_selected" />
+                                </LevelSelectedStyles>
+                            </asp:Menu>
+                            <asp:SiteMapDataSource runat="server" ID="menuDataSource" ShowStartingNode="false" />
+                        </div>
+                        <div class="main_content">  
+                           <div class="heightHolder"> </div>                                  
+                           <div id="contentContainer" style="float: left;">
+            </SubpageTemplate>
+        </cc1:HomepageContent>
+    </ContentTemplate>
+</cc1:TemplatedContent>
+
+<cc1:TemplatedContent runat="server" SkinID="Bottom">
+    <ContentTemplate>
+        <cc1:HomepageContent runat="server">
+            <HomepageTemplate>
+                            </div>
+                        </div>
+                        <div class="home_bottomBox_bottom">
+                            <div class="home_footer">
+                                <cc1:WebSiteFooter runat="server" ID="WebSiteFooter1" />                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </HomepageTemplate>
+            <SubpageTemplate>
+							</div>
+						</div>
+					</div>
+            <div class="mainBox_bottom">
+                <div class="content_footer">
+                    <cc1:WebSiteFooter runat="server" ID="WebSiteFooter2" />                    
+                </div>
+            </div>
+        </div>
+            </SubpageTemplate>
+        </cc1:HomepageContent>                         
+    </ContentTemplate>
+</cc1:TemplatedContent>
+
+<cc1:Pager 
+    Width="100%"
+    runat="server" 
+    PageSize="20"
+    FirstImageUrl="_images/icon_to_start.gif" 
+    PreviousImageUrl="_images/icon_back.gif" 
+    NextImageUrl="_images/icon_next.gif" 
+    LastImageUrl="_images/icon_to_end.gif" 
+    Mode="FirstPreviousNextLast"
+    CssClass="pager"  
+/>
+
+<RJS:PopCalendar 
+    runat="server" 
+    MessageAlignment="RightCalendarControl" 
+    RequiredDate="True" 
+    SelectHoliday="True" 
+    SelectWeekend="True" 
+    ShowHolidays="False" 
+    ShowSpecialDay="False" 
+    ShowWeekend="True" 
+    ShowWeekNumber="True" 
+    KeepInside="false"
+/>
+
+<asp:TextBox runat="server" CssClass="textbox"/>
+<asp:TextBox runat="server" CssClass="textbox" Width="100px" SkinID="datepicker"/>
+<asp:TextBox runat="server" CssClass="textbox" SkinID="timepicker" />
+<asp:TextBox runat="server" CssClass="textboxAdmin" SkinID="admin"/>
+<asp:TextBox runat="server" CssClass="textboxBlog" SkinID="blog"/>
+
+<asp:Calendar runat="server" SkinID="blogCalendar"  
+    DayNameFormat="FirstTwoLetters"
+    CellPadding="3"
+    CellSpacing="0"
+    CssClass="calendarStyle"
+    TitleStyle-CssClass="calendarTitle"
+    TitleStyle-BackColor="Transparent"
+    DayHeaderStyle-CssClass="calendarHeader"
+    DayStyle-CssClass="calendarDay"
+    SelectedDayStyle-BackColor="White"
+    SelectedDayStyle-Font-Bold="true"
+    SelectedDayStyle-ForeColor="black" />
+    
+<asp:FileUpload runat="server" CssClass="textbox" />
+
+<asp:GridView runat="server" AllowPaging="false" AllowSorting="false" BorderStyle="none" BorderWidth="0px" Width="100%" GridLines="none"></asp:GridView>
+
+<%-- Buttons --%>
+<asp:Button runat="server" CssClass="button" />
+<asp:LinkButton runat="server" CssClass="btnRight" SkinID="Right"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnLeft" SkinID="Left"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnUp" SkinID="Up"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnDown" SkinID="Down"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnEdit" SkinID="Edit"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnDelete" SkinID="Delete"></asp:LinkButton>
+
+<%-- Gallery --%>
+<asp:DataList runat="server" SkinID="gallery" RepeatDirection="Horizontal" RepeatColumns="4">
+    <ItemStyle CssClass="gallerycell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="galleryEdit" RepeatDirection="Horizontal" RepeatColumns="4">
+    <ItemStyle CssClass="gallerycell" />
+</asp:DataList>
+
+<%-- BLOG --%>
+<asp:DataList runat="server" SkinID="blog" RepeatDirection="Vertical">
+    <ItemStyle CssClass="blogcell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="blogEdit" RepeatDirection="Vertical">
+    <ItemStyle CssClass="blogcell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="comments" RepeatDirection="Vertical">
+    <ItemStyle CssClass="commentcell" />
+</asp:DataList>
+
+<cc1:Pager 
+    Width="100%"
+    runat="server" 
+    SkinID="gallery" 
+    PageSize="8"
+    FirstImageUrl="_images/icon_to_start.gif" 
+    PreviousImageUrl="_images/icon_back.gif" 
+    NextImageUrl="_images/icon_next.gif" 
+    LastImageUrl="_images/icon_to_end.gif" 
+    Mode="FirstPreviousNextLast" 
+    CssClass="pager"
+/>
+   
+<cc1:ResizedImage runat="server" SkinID="galleryThumbnail" MaxWidth="95" MaxHeight="95" ImageAlign="Middle"/>
+<cc1:ResizedImage runat="server" SkinID="galleryBigView" MaxWidth="440" MaxHeight="440" ImageAlign="top"/>
+
+<%-- Validators --%>
+<asp:CompareValidator runat="server" CssClass="error" />
+<asp:CustomValidator runat="server" CssClass="error" />
+<asp:RangeValidator runat="server" CssClass="error" />
+<asp:RegularExpressionValidator runat="server" CssClass="error" />
+<asp:RequiredFieldValidator runat="server" CssClass="error" />
+
+<%-- RSS Display Item Template --%>
+<asp:DataList runat="server" CssClass="RssDisplay" SkinID="RssDisplay"/>

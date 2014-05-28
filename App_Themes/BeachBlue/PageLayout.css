@@ -1,0 +1,175 @@
+﻿div#mainContainer
+{
+    height: 100%;
+    width: 772px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+div#navigationContainer
+{
+    display: inline;
+    width: 181px;
+    float:left;
+    margin-top: 62px;
+    margin-left: 24px;
+    z-index: 2;
+}
+
+div#nav 
+{
+    border-bottom: solid 1px #707491;
+}
+
+div.sidebartop 
+{
+    margin-top: 100px;
+    background: url(_images/sidebar_top.gif);
+    width: 181px;
+    height: 16px;
+}
+
+div.sidebar 
+{
+     background: url(_images/sidebar_bg.gif) repeat-y;
+     padding-left: 10px;
+     padding-right: 10px;
+     width: 161px;
+}
+
+div.sidebarbottom
+{
+    background: url(_images/sidebar_bottom.gif);
+    width: 181px;
+    height: 16px;
+}
+
+div.sidebar ul 
+{
+    margin: 0;
+    padding: 0;
+}
+
+div.sidebar ul li.item
+{
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+div.sidebar ul li.sidebaritemseparator
+{
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0px;
+	background: transparent url(_images/sidebar_ruler.gif) no-repeat center;
+	padding-top: 10px;
+	width: 161px;
+	height: 10px;
+}
+
+div#contentWrapper 
+{
+    display: inline;
+    width: 542px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 25px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+div#contentContainer 
+{
+    display: block;
+    margin-top: 5px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+div#headContainer 
+{
+    height: 61px;
+}
+
+div#websiteTitle 
+{
+    color: #4D77C6;
+    margin-top: 20px;
+    float: left;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+div#utilities 
+{
+    margin-top: 25px;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+div#utilities a
+{
+    color: #666666;
+    text-decoration: none;
+}
+
+#contentContainer div.sectionsettings 
+{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: #ECF0F8;
+    border: solid 1px #9CB6E9;
+    padding: 3px;
+    width: 474px;
+}
+
+#contentContainer div.sectionsettings table td
+{
+    vertical-align: middle;
+}
+
+div#breadcrumbs
+{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    height: 36px;
+}
+
+div#breadcrumbs .node
+{
+    color: #666666;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+div#breadcrumbs .currentNode
+{
+    color: #000000;
+}
+
+div#breadcrumbs .separator
+{
+    color: #666666;
+    padding-right: 5px;
+}
+
+div#footer 
+{
+    padding-top: 20px;
+    color: #999999;
+    font-size: 10px;
+}

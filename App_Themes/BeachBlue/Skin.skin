@@ -1,0 +1,167 @@
+<%@ Register TagPrefix="cc1" Namespace="MyWebPagesStarterKit.Controls" %>
+<%@ Register TagPrefix="RJS" Namespace="RJS.Web.WebControl" Assembly="RJS.Web.WebControl.PopCalendar" %>
+<cc1:TemplatedContent runat="server" SkinID="Top">
+    <ContentTemplate>
+        <div align="center" style="height: 100%;">
+            <div id="mainContainer">
+                <div id="navigationContainer">
+                    <div id="nav">
+                        <asp:Menu 
+                            runat="server" 
+                            DataSourceID="menuDataSource" 
+                            DynamicHorizontalOffset="3" 
+                            DynamicVerticalOffset="0" 
+                            StaticEnableDefaultPopOutImage="false" 
+                            DynamicEnableDefaultPopOutImage="false"
+                            ItemWrap="true"
+                        >
+                            <StaticMenuItemStyle CssClass="nav" Width="181px" Height="21px" />
+                            <StaticSelectedStyle CssClass="nav_selected" />
+                            <DynamicMenuItemStyle CssClass="sublevel" Width="181px" Height="21px" />
+                            <DynamicSelectedStyle CssClass="sublevel_selected" />
+                        </asp:Menu>
+                        <asp:SiteMapDataSource runat="server" ID="menuDataSource" ShowStartingNode="false" />
+                    </div>
+                    <cc1:SidebarControl ID="sidebar" runat="server" />
+                </div>
+                <div id="contentWrapper">
+                    <div id="headContainer">
+                        <div id="websiteTitle"><cc1:WebSiteTitle runat="server"></cc1:WebSiteTitle></div>
+                        <div id="utilities"><cc1:LoginStatus runat="Server" id="LoginStatus1" />&nbsp;&nbsp;&nbsp;<cc1:SearchLink runat="Server" id="SearchLink1" /></div>
+                    </div>
+                    <cc1:HomepageContent runat="server">
+                        <HomepageTemplate><asp:Image runat="server" ID="imgHeadHome" ImageUrl="_images/img_header_home.jpg" GenerateEmptyAlternateText="true" /></HomepageTemplate>
+                        <SubpageTemplate><asp:Image runat="server" ID="imgHeadSub" ImageUrl="_images/img_header_sub.jpg" GenerateEmptyAlternateText="true" /></SubpageTemplate>
+                    </cc1:HomepageContent>
+                    <div id="contentContainer">
+                        <div id="breadcrumbs">
+                            <asp:SiteMapPath runat="server" ID="sitemapPath" ShowToolTips="false">
+                                <RootNodeTemplate></RootNodeTemplate>
+                                <CurrentNodeStyle CssClass="currentNode" />
+                                <NodeStyle CssClass="node" />
+                                <PathSeparatorStyle CssClass="separator" />
+                                <PathSeparatorTemplate>&gt;</PathSeparatorTemplate>
+                            </asp:SiteMapPath>
+                        </div>
+                    </ContentTemplate>
+</cc1:TemplatedContent>
+
+<cc1:TemplatedContent runat="server" SkinID="Bottom">
+    <ContentTemplate>
+                    <div id="footer"><cc1:WebSiteFooter runat="server" ID="footer" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ContentTemplate>
+</cc1:TemplatedContent>
+
+<cc1:Pager 
+    Width="100%"
+    runat="server" 
+    PageSize="20"
+    FirstImageUrl="_images/icon_to_start.gif" 
+    PreviousImageUrl="_images/icon_back.gif" 
+    NextImageUrl="_images/icon_next.gif" 
+    LastImageUrl="_images/icon_to_end.gif" 
+    Mode="FirstPreviousNextLast" 
+    CssClass="pager"
+/>
+
+<RJS:PopCalendar 
+    runat="server" 
+    MessageAlignment="RightCalendarControl" 
+    RequiredDate="True" 
+    SelectHoliday="True" 
+    SelectWeekend="True" 
+    ShowHolidays="False" 
+    ShowSpecialDay="False" 
+    ShowWeekend="True" 
+    ShowWeekNumber="True" 
+    KeepInside="false"
+/>
+    
+
+<asp:PasswordRecovery runat="server"
+        SubmitButtonStyle-CssClass="button"        
+/>
+
+<asp:TextBox runat="server" CssClass="textbox"/>
+<asp:TextBox runat="server" CssClass="textbox" Width="100px" SkinID="datepicker"/>
+<asp:TextBox runat="server" CssClass="textbox" SkinID="timepicker" />
+<asp:TextBox runat="server" CssClass="textboxAdmin" SkinID="admin"/>
+<asp:TextBox runat="server" CssClass="textboxBlog" SkinID="blog"/>
+
+<asp:Calendar runat="server" SkinID="blogCalendar"  
+    DayNameFormat="FirstTwoLetters"
+    CellPadding="3"
+    CellSpacing="0"
+    CssClass="calendarStyle"
+    TitleStyle-CssClass="calendarTitle"
+    TitleStyle-BackColor="Transparent"
+    DayHeaderStyle-CssClass="calendarHeader"
+    DayStyle-CssClass="calendarDay"
+    SelectedDayStyle-BackColor="White"
+    SelectedDayStyle-Font-Bold="true"
+    SelectedDayStyle-ForeColor="black" />
+    
+<asp:FileUpload runat="server" CssClass="textbox" />
+
+<asp:GridView runat="server" AllowPaging="false" AllowSorting="false" BorderStyle="none" BorderWidth="0" Width="100%" GridLines="none">
+    <AlternatingRowStyle BorderStyle="none" />
+    <RowStyle BorderStyle="none" />
+</asp:GridView>
+
+<%-- Buttons --%>
+<asp:Button runat="server" CssClass="button" />
+<asp:LinkButton runat="server" CssClass="btnRight" SkinID="Right"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnLeft" SkinID="Left"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnUp" SkinID="Up"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnDown" SkinID="Down"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnEdit" SkinID="Edit"></asp:LinkButton>
+<asp:LinkButton runat="server" CssClass="btnDelete" SkinID="Delete"></asp:LinkButton>
+
+<%-- Gallery --%>
+<asp:DataList runat="server" SkinID="gallery" RepeatDirection="Horizontal" RepeatColumns="4">
+    <ItemStyle CssClass="gallerycell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="galleryEdit" RepeatDirection="Horizontal" RepeatColumns="4">
+    <ItemStyle CssClass="gallerycell" />
+</asp:DataList>
+
+<%-- BLOG --%>
+<asp:DataList runat="server" SkinID="blog" RepeatDirection="Vertical">
+    <ItemStyle CssClass="blogcell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="blogEdit" RepeatDirection="Vertical">
+    <ItemStyle CssClass="blogcell" />
+</asp:DataList>
+<asp:DataList runat="server" SkinID="comments" RepeatDirection="Vertical">
+    <ItemStyle CssClass="commentcell" />
+</asp:DataList>
+
+<cc1:Pager 
+    Width="100%"
+    runat="server" 
+    SkinID="gallery" 
+    PageSize="8"
+    FirstImageUrl="_images/icon_to_start.gif" 
+    PreviousImageUrl="_images/icon_back.gif" 
+    NextImageUrl="_images/icon_next.gif" 
+    LastImageUrl="_images/icon_to_end.gif" 
+    Mode="FirstPreviousNextLast" 
+    CssClass="pager"
+/>
+   
+<cc1:ResizedImage runat="server" SkinID="galleryThumbnail" MaxWidth="100" MaxHeight="100" ImageAlign="Middle"/>
+<cc1:ResizedImage runat="server" SkinID="galleryBigView" MaxWidth="460" MaxHeight="460" ImageAlign="top"/>
+
+<%-- Validators --%>
+<asp:CompareValidator runat="server" CssClass="error" />
+<asp:CustomValidator runat="server" CssClass="error" />
+<asp:RangeValidator runat="server" CssClass="error" />
+<asp:RegularExpressionValidator runat="server" CssClass="error" />
+<asp:RequiredFieldValidator runat="server" CssClass="error" />
+
+<%-- RSS Display Item Template --%>
+<asp:DataList runat="server" CssClass="RssDisplay" SkinID="RssDisplay"/>

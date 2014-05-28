@@ -1,0 +1,75 @@
+﻿/* navigation */
+table.nav
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: Transparent url(_images/nav_bg_lo.jpg) repeat-y top left;
+}
+
+table.nav td
+{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+a.nav, a.nav:link, a.nav:active, a.nav:visited, a.nav:hover
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #000000;
+}
+
+table.nav_selected
+{
+    background: Transparent url(_images/nav_bg_hi.jpg) repeat-y top left;
+}
+
+a.nav_selected, a.nav_selected:link, a.nav_selected:active, a.nav_selected:visited, a.nav_selected:hover
+{
+    font-weight: bold;
+}
+
+.sublevel
+{
+	/* this is a bugfix for asp:Menu in IE8 */
+	z-index: 100; 
+}
+
+table.sublevel
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: Transparent url(_images/nav_bg_lo.jpg) repeat-y top left;
+}
+
+table.sublevel td
+{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+a.sublevel, a.sublevel:link, a.sublevel:active, a.sublevel:visited, a.sublevel:hover
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #000000;
+}
+
+table.sublevel_selected
+{
+    background: Transparent url(_images/nav_bg_hi.jpg) repeat-y top left;
+}
+
+a.sublevel_selected, a.sublevel_selected:link, a.sublevel_selected:active, a.sublevel_selected:visited, a.sublevel_selected:hover
+{
+    font-weight: bold;
+}
+/* end navigation */

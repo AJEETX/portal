@@ -1,0 +1,47 @@
+﻿body
+{
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+
+
+h1
+{
+    font-size: 16px;
+    color: #777777;
+}
+
+h2
+{
+    font-size: 11px;
+    font-weight: bold;
+    color: #777777;
+}
+
+h3, h4, h5, h6
+{
+    color: #777777;
+}
+
+a, a:visited, a:active, a:hover, a:link 
+{
+    color: #000000;
+}
+
+/* BREADCRUMB */
+.separator,
+.currentNode
+{
+    color: #314e6d;
+}
+
+.node, .node:visited, node:active, node:hover, node:link 
+{
+    color: #6d8bad;
+}
+
+.separator
+{
+    margin: 0 3px;
+}

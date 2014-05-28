@@ -1,0 +1,180 @@
+﻿/* navigation: top */
+.nav_table
+{
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 395px;
+    text-transform: uppercase;    
+    font-size: 12px;       
+}
+
+.nav, .nav tr
+{
+    height: 100%;
+}
+
+table.nav td
+{
+    padding: 0px;
+    height: 30px; 
+}
+
+.nav_selected, .nav_hover
+{
+    background: Transparent url(_images/topmenu_bg_selected.png) repeat-x top left;
+    color: #ffffff;
+}
+
+a.nav, a.nav:link, a.nav:active, a.nav:visited, a.nav:hover
+{
+    display: block;
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 32px;
+    color: #bfc7d0;
+}
+
+a.nav:hover
+{
+    color: #FFFFFF;
+}
+
+a.nav_selected, a.nav_selected:link, a.nav_selected:active, a.nav_selected:visited, a.nav_selected:hover
+{
+    color: #FFFFFF;
+}
+
+a.nav_selected, a.nav_selected:link, a.nav_selected:active, a.nav_selected:visited, a.nav_selected:hover,
+a.nav_hover, a.nav_hover:link, a.nav_hover:active, a.nav_hover:visited, a.nav_hover:hover
+{
+    color: #ffffff;
+}
+
+/***************/
+
+/* navigation: left */
+.leftnav_table
+{
+    margin-left: 1px;     
+    width: 200px;
+    color: #777777;
+}
+
+.leftnav_table tr
+{
+     background: Transparent url(_images/img_bg_navigation.jpg) repeat-x top left;
+     height: 28px;    
+}
+
+.leftnav
+{
+    
+}
+
+table.leftnav td
+{
+    padding: 0px;
+}
+
+.leftnav_selected tr, .leftnav_hover tr
+{
+    background: #536E8C;
+    color: #ffffff;
+}
+
+a.leftnav, a.leftnav:link, a.leftnav:active, a.leftnav:visited, a.leftnav:hover
+{
+    display: block;
+    line-height: 28px;
+    padding-left: 11px;
+    color: #777777;
+}
+
+a.leftnav:hover
+{
+    color: #FFFFFF;
+}
+
+a.leftnav_selected, a.leftnav_selected:link, a.leftnav_selected:active, a.leftnav_selected:visited, a.leftnav_selected:hover
+{
+    color: #FFFFFF;
+}
+
+a.leftnav_selected, a.leftnav_selected:link, a.leftnav_selected:active, a.leftnav_selected:visited, a.leftnav_selected:hover,
+a.leftnav_hover, a.leftnav_hover:link, a.leftnav_hover:active, a.leftnav_hover:visited, a.leftnav_hover:hover
+{
+    color: #ffffff;
+}
+
+/* submenu */
+
+.leftnav_submenu tr
+{
+    background: Transparent url(_images/img_bg_navigation_sublevel.jpg) repeat-x top left;
+}
+
+a.leftnav_submenu, a.leftnav_submenu:link, a.leftnav_submenu:active, a.leftnav_submenu:visited, a.leftnav_submenu:hover
+{
+    display: block;
+    margin-top: 6px;
+    width: 100%;
+    color: #777777;
+}
+
+a.leftnav_submenu:hover
+{
+    color: #304D6C;
+}
+
+a.leftnav_submenu_selected, a.leftnav_submenu_selected:link, a.leftnav_submenu_selected:active, a.leftnav_submenu_selected:visited, a.leftnav_submenu_selected:hover
+{
+    color: #304D6C;
+}
+
+a.leftnav_submenu_selected, a.leftnav_submenu_selected:link, a.leftnav_submenu_selected:active, a.leftnav_submenu_selected:visited, a.leftnav_submenu_selected:hover,
+a.leftnav_submenu_hover, a.leftnav_submenu_hover:link, a.leftnav_submenu_hover:active, a.leftnav_submenu_hover:visited, a.leftnav_submenu_hover:hover
+{
+    color: #304D6C;
+}
+
+/***************/
+
+
+
+
+
+div.sublevelwrapper
+{
+    background: Transparent url(_images/bg.gif) repeat-x top left;
+    z-index: 101;
+}
+
+.sublevel
+{
+	/* this is a bugfix for asp:Menu in IE8 */
+	z-index: 100; 
+	position: relative;
+}
+
+a.sublevel, a.sublevel:link, a.sublevel:active, a.sublevel:visited, a.sublevel:hover
+{
+    padding: 5px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #B0CBD7;
+}
+
+a.sublevel:hover
+{
+    color: #FFFFFF;
+}
+
+a.sublevel_selected, a.sublevel_selected:link, a.sublevel_selected:active, a.sublevel_selected:visited, a.sublevel_selected:hover
+{
+    font-weight: bold;
+    color: #FFFFFF;
+}
+/* end navigation */

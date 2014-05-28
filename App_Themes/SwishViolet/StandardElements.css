@@ -1,0 +1,91 @@
+﻿html, body, form {
+	height: 100%;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: Transparent url(_images/bg.gif) repeat;
+	color: #000000;
+}
+
+table 
+{
+    border-collapse: collapse;
+    border: none 0px;
+    padding: 0;
+    margin: 0;
+}
+
+img
+{
+    border: none 0px;
+    padding: 0;
+    margin: 0;
+}
+
+hr
+{
+    border: none;
+    height: 1px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #FFFFFF;
+}
+
+td
+{
+    vertical-align: top;
+}
+
+td.field 
+{
+    width: 320px;
+}
+
+td.fieldlabel
+{
+    width: 140px;
+    text-align: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.framed 
+{
+    background-color: #E7E0EE;
+    border: solid 1px #4F376F;
+    padding: 10px;
+    width: 440px;
+    color: #000000;
+}
+
+.framed h1, .framed h2, .framed h3, .framed h4, .framed h5, .framed h6
+{
+    color: #4F376F;
+} 
+
+ul 
+{
+	margin-left: 30px;
+    list-style-type: none;
+    list-style-image: url(_images/img_bullet.gif);
+    color: #000000;
+}
+
+.odd
+{
+    background-color: #FFFFFF;
+}
+
+.even
+{
+    background-color: #E7E0EE;
+}

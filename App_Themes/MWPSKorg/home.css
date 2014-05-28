@@ -1,0 +1,284 @@
+﻿.home_bottomBox h1,
+.home_bottomBox h2
+{
+    color: White;
+}
+
+.home_contentWrapper
+{
+    margin: 0 auto;
+    width: 902px;
+}
+
+/* Home topBox (First Box - Top) */
+
+.home_topBox
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 902px;
+}
+
+.home_topBox_top
+{
+    width: 902px;
+    height: 13px;
+    background: Transparent url(_images/topbox_top.png) no-repeat top left;
+    
+}
+
+.home_topBox_content
+{
+    width: 902px;
+    overflow: hidden;
+    background: Transparent url(_images/topbox_repeat.png) repeat-y top left;
+}
+
+.home_topBox_contentText
+{
+    margin:0 15px 0 15px;
+    text-align: left;
+}
+
+.home_topBox_bottom
+{
+    width: 902px;
+    height: 13px;
+    background: Transparent url(_images/topbox_bottom.png) no-repeat top left;  
+}
+
+/* Home bottomBox (Second Box - Bottom) */
+
+.home_bottomBox_top
+{
+    width: 902px;
+    height: 13px;
+    background: Transparent url(_images/img_box_top.png) no-repeat top left;   
+}
+
+.home_content
+{
+    width: 902px;
+    overflow: hidden;
+    background: Transparent url(_images/img_box_repeat.png) repeat-y top left;
+}
+
+.home_bottomText
+{
+    width: 840px;
+    margin: 0px 30px 0px 30px;
+}
+
+.home_bottomBox_bottom
+{
+    width: 902px;
+    height: 55px;
+    background: Transparent url(_images/img_box_bottom.png) no-repeat top left;  
+}
+
+.home_bottomBox a
+{
+	text-decoration: none;
+}
+
+.home_bottomBox
+{
+	position: relative;
+    margin-top: 9px;
+    width: 902px;
+    text-align: left;
+}
+
+.home_textblock
+{
+    margin-left: 20px;
+    font-size: 11px;
+}
+
+.home_textblock h1
+{
+    color: #2E4A69;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.home_textblock a,
+.home_textblock a:link,
+.home_textblock a:active,
+.home_textblock a:visited,
+.home_textblock a:hover
+{
+    color: #2E4A69;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Start of CSS for the example welcome content, can be removed if you do not use that content */
+
+.home_topImage
+{
+    float: left;
+    margin: 19px 0 0 62px;
+}
+
+.home_welcomeBox
+{
+    width: 495px;
+    /*height: 224px;*/
+    float: left;
+    margin: 0px 0 0 56px;
+    text-align: left;
+}
+
+.home_welcomeBox a
+{
+	text-decoration: none;
+	color:#000000;
+	font-weight:normal;
+}
+
+.home_welcome_codeplexBox
+{
+	cursor: pointer;
+    width: 495px;
+    height: 82px;
+    background: Transparent url(_images/img_box_small_grey.png) no-repeat top left;    
+}
+
+.home_welcome_codeplexBox_logo
+{
+    float: left;
+    margin: 20px 0 0 20px;
+    top: 20px;
+    left: 20px;
+}
+
+.home_welcome_codeplexBox_text
+{
+    width: 273px;
+    float: left;
+    padding-top: 8px;
+}
+
+.home_contactus
+{
+    float: left;
+    margin: 30px 0 0 52px;
+    width: 400px;
+}
+
+/* End of CSS for the example welcome content, can be removed if you do not use that content */
+
+
+/* boxes */
+.bottom_box
+{
+	cursor: pointer;
+    width: 228px;
+    height: 164px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom:20px;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 11px;
+}
+
+.bottom_box a,
+.bottom_box a:link,
+.bottom_box a:visited,
+.bottom_box a:active,
+.bottom_box a:hover
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.bottom_box h1
+{
+    font-size: 18px;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+.box_use
+{
+	position: relative;
+    margin-left: 30px;
+    background: Transparent url(_images/img_box_red.png) no-repeat top left;  
+}
+
+.box_develop
+{
+	position: relative;
+    margin-left: 18px;
+    background: Transparent url(_images/img_box_blue.png) no-repeat top left;  
+}
+
+.box_contribute
+{
+	position: relative;
+    margin-left: 18px;
+    background: Transparent url(_images/img_box_green.png) no-repeat top left;  
+}
+
+.bottombox_getmore
+{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+    width: 228px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.getMoreText
+{
+    margin-top: 3px;
+    width: 150px;
+    float: left;
+}
+
+/* end boxes */
+
+.home_footer
+{
+    position: absolute;
+    left: 0px;
+    bottom: 18px;
+    float: left;
+    clear: both;
+    margin: 50px 0 0 52px; 
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.content_footer
+{
+    float: left;
+    clear: both;
+    margin: 25px 0 0 52px; 
+    color: #ffffff;
+    font-size: 11px;
+}
+
+/* content */
+
+div#home_content_container .box_use h1,
+div#home_content_container .box_develop h1,
+div#home_content_container .box_contribute h1
+{
+    color: #ffffff;
+}
+
+div#home_content_container h1,
+div#home_content_container h2,
+div#home_content_container h3
+{
+    color: #2E4A69;
+}
+

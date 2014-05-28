@@ -1,0 +1,219 @@
+﻿div#mainContainer
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 775px;
+	text-align: left;
+}
+
+div#navigationContainer
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 41px;
+	background-color: #000000;
+	z-index: 2;
+}
+
+div#navigation
+{
+	position: relative;
+	top: 6px;
+	left: 32px;
+	color: #FFFFFF;
+}
+
+div#utilities
+{
+	position: absolute;
+	top: 24px;
+	right: 36px;
+	color: #FFFFFF;
+}
+
+div#utilities a
+{
+    color: #666666;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+div#navigationSeparator
+{
+    height: 1px;
+    width: 775px;
+    background-color: #B0BAC5;
+}
+
+div#subheadWrapper
+{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: #E8EEE9 url(_images/img_topbg.gif) repeat-x top left;
+}
+
+div#websiteTitle
+{
+	position: relative;
+	top: 0px;
+	left: 274px;
+	color: #FFFFFF;
+	font-size: 23px;
+	padding-top: 28px;
+	vertical-align: top;
+	height: 46px;
+	width: 465px;
+}
+
+table#mainTable
+{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    width: 739px;
+}
+
+td#sidebarContainer
+{
+	width: 230px;
+	padding-bottom: 30px;
+}
+
+div#sidebar 
+{
+    padding-left: 32px;
+}
+
+div#breadcrumbs
+{
+    margin: 0;
+    padding: 0;
+    padding-left: 44px;
+    padding-top: 3px;
+    vertical-align: top;
+    height: 36px;
+}
+
+div#breadcrumbs .node
+{
+    color: #999999;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+div#breadcrumbs .currentNode
+{
+    color: #0F3A14;
+}
+
+div#breadcrumbs .separator
+{
+    color: #999999;
+    padding-right: 5px;
+}
+
+td#contentContainer
+{
+    margin: 0;
+    padding: 0;
+	width: 479px;
+	vertical-align: top;
+	background-color: #FFFFFF;
+}
+
+div#content 
+{
+    padding-left: 44px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+}
+
+td#flap
+{
+    width: 30px;
+    background: transparent url(_images/img_flapbg.gif) repeat-x top left;
+}
+
+div.sidebartop 
+{
+    margin-top: 16px;
+    background: transparent url(_images/img_sidebar_topflap.gif) no-repeat top left;
+    width: 167px;
+    height: 19px;
+}
+
+div.sidebar 
+{
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #CFD3D8;
+    width: 147px;
+}
+
+div.sidebarbottom
+{
+    background-color: #CFD3D8;
+    width: 167px;
+    height: 19px;
+}
+
+div.sidebar ul 
+{
+    margin: 0;
+    padding: 0;
+}
+
+div.sidebar ul li.item
+{
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+div.sidebar ul li.item a
+{
+    text-decoration: none;
+}
+
+div.sidebar ul li.sidebaritemseparator
+{
+	list-style-type: none;
+	padding: 0;
+	margin-left: 0px;
+	border-bottom: solid 1px #0F3A14;
+	margin-bottom: 10px;
+	width: 147px;
+	height: 10px;
+}
+
+div#footer
+{
+    width: 501px;
+    background-color: #B0BAC5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 274px;
+    color: #FFFFFF;
+}
+
+#contentContainer div.sectionsettings 
+{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: #E8EEE9;
+    border: solid 1px #0F3A14;
+    padding: 3px;
+    width: 427px;
+}
+
+#contentContainer div.sectionsettings table td
+{
+    vertical-align: middle;
+}

@@ -1,0 +1,29 @@
+﻿.topBar_wrapper
+{
+    height: 56px;
+    width: 100%;
+    /*position: relative;*/
+    background: Transparent url(_images/topbar_bg.png) repeat-x top left;
+}
+
+.topBar_centered
+{
+    position: relative;
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.imgHomeTitle
+{
+    /*position: absolute;
+    top: 20px;
+    left: 30px;*/
+    float: left;
+    margin: 16px 0 0 30px;
+}
+
+.lastSeparator
+{
+    float: left;
+}
