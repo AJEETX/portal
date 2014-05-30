@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode>
+    <siteMapNode url="~/administration/default.aspx" title="Administration">
+      <siteMapNode url="~/administration/website.aspx" title="CMS Setup" />
+      <siteMapNode url="~/administration/sections.aspx" title="Sections/Page Assignment" />
+      <siteMapNode url="~/administration/navigation.aspx" title="Pages and Navigation" />
+      <siteMapNode url="~/administration/users.aspx" title="User Management" />
+    </siteMapNode>
+    <siteMapNode title="Home" url="~/homepage.aspx" visible="True" pageId="cef7a9d4-0d53-4876-a625-e2af44acf32a" />
+    <siteMapNode title="Profile" url="~/default.aspx?pg=170f780c-cd3c-4e0a-acb9-e11d970d1fe3" visible="True" pageId="170f780c-cd3c-4e0a-acb9-e11d970d1fe3" />
+    <siteMapNode title="Services" url="~/default.aspx?pg=4092ef78-c7d5-4163-89fb-03ffa80fb37e" visible="True" pageId="4092ef78-c7d5-4163-89fb-03ffa80fb37e" />
+    <siteMapNode title="Contact" url="~/default.aspx?pg=76b28576-235e-4c66-9f4c-bcf45c19ce05" visible="True" pageId="76b28576-235e-4c66-9f4c-bcf45c19ce05" />
+  </siteMapNode>
+</siteMap>

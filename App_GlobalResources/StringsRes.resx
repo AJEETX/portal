@@ -326,15 +326,15 @@
     <comment>added 1.0.0</comment>
   </data>
   <data name="adm_Users_ChangeUser" xml:space="preserve">
-    <value>Change User</value>
+    <value>Client List</value>
     <comment>added 1.0.0</comment>
   </data>
   <data name="adm_Users_Comment" xml:space="preserve">
-    <value>Comment</value>
+    <value>Status</value>
     <comment>added 1.0.0</comment>
   </data>
   <data name="adm_Users_CreateUser" xml:space="preserve">
-    <value>Creating a new User</value>
+    <value>Creating a new Client</value>
     <comment>added 1.0.0</comment>
   </data>
   <data name="adm_Users_Email" xml:space="preserve">
@@ -526,11 +526,11 @@
     <comment>added 1.0.0</comment>
   </data>
   <data name="adm_Users_DeleteUser" xml:space="preserve">
-    <value>Delete current user</value>
+    <value>Delete current Client</value>
     <comment>added 1.0.0</comment>
   </data>
   <data name="adm_Users_DeleteWarning" xml:space="preserve">
-    <value>Are you sure you want to delete the current user?</value>
+    <value>Are you sure you want to delete the current Client?</value>
     <comment>added 1.0.0</comment>
   </data>
   <data name="adm_Users_Exception" xml:space="preserve">
@@ -938,15 +938,15 @@
     <comment>added 1.1.2 Beta</comment>
   </data>
   <data name="adm_Navigation_EditPowerUser" xml:space="preserve">
-    <value>Editable by Power User</value>
+    <value>Editable by Associate User</value>
     <comment>added 1.2.0 Beta</comment>
   </data>
   <data name="adm_Users_IsPowerUser" xml:space="preserve">
-    <value>Is Power User</value>
+    <value>Is Associate User</value>
     <comment>added 1.2.0 Beta</comment>
   </data>
   <data name="adm_Users_PowerUser" xml:space="preserve">
-    <value>Power User</value>
+    <value>Associate User</value>
     <comment>added 1.2.0 Beta</comment>
   </data>
   <data name="ctl_TagCloud_RssTitle" xml:space="preserve">
@@ -1210,7 +1210,7 @@
     <comment>added 1.3.0</comment>
   </data>
   <data name="pge_Login_CreateUser" xml:space="preserve">
-    <value>Create user</value>
+    <value>New Client ? Register</value>
   </data>
   <data name="adm_Users_IsApproved" xml:space="preserve">
     <value>Is approved</value>
@@ -1225,7 +1225,7 @@
     <comment>added 1.3.0</comment>
   </data>
   <data name="pge_Login_ActivationSuccess" xml:space="preserve">
-    <value>User successfully activated!</value>
+    <value>Client successfully activated!</value>
     <comment>added 1.3.0</comment>
   </data>
   <data name="pge_UserRegistration_ActivationEmailBody" xml:space="preserve">
@@ -1323,5 +1323,14 @@ Thank you</value>
   <data name="pge_ChangePassword_FirstUse" xml:space="preserve">
     <value>This is the first time you use this website. Please change the administrator password. &lt;br/&gt;&lt;br/&gt;The current username is "admin" and the password is "admin".</value>
     <comment>added 1.3.0</comment>
+  </data>
+  <data name="adm_Users_Address" xml:space="preserve">
+    <value>Present Address</value>
+  </data>
+  <data name="ctl_createUserWizard_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ctl_CreateUserWizard_AddressRequired" xml:space="preserve">
+    <value>Address is required</value>
   </data>
 </root>

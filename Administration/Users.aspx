@@ -3,7 +3,6 @@
 <%@ MasterType VirtualPath="~/Site.master" %>
 
 <asp:Content ID="contentPane" ContentPlaceHolderID="mainContent" runat="Server">
-    <img src="../Images/info.gif" alt="Info" onclick="window.open('../Documentation/<%=lang%>/quick_guide.html#user-management','InfoPopUp', 'height=780,width=800,location=no,menubar=no,resizable=yes,scrollbars=yes,status=yes,toolbar=no');return false;" style="height:16px;width:16px;border-width:0px;cursor:hand;" />
     <table width="100%">
     <tr runat="server" id="trMessage">
         <td>
@@ -18,7 +17,7 @@
                     AutoGenerateColumns="false" AllowPaging="true" AllowSorting="true" OnRowCommand="gvUsers_RowCommand" OnRowDataBound="gvUsers_RowDataBound">
                    <Columns>
                         <asp:BoundField DataField="UserName" HeaderText="<%$ Resources:stringsRes, adm_Users_UserName%>" SortExpression="UserName"/>
-                        <asp:BoundField DataField="Comment" HeaderText="<%$ Resources:stringsRes, adm_Users_Comment%>" />
+                        <asp:BoundField DataField="Comment" ItemStyle-ForeColor="Red" HeaderText="<%$ Resources:stringsRes, adm_Users_Comment%>" />
                         <asp:TemplateField HeaderText="<%$ Resources:stringsRes, adm_Users_PowerUser%>" ItemStyle-HorizontalAlign="left">
                             <ItemTemplate>
                                 <%#ShowPowerUser((string)DataBinder.Eval(Container.DataItem, "UserName"))%>
@@ -52,44 +51,25 @@
                 <asp:Table id="tblEditUser" BorderWidth="0" runat="server" OnPreRender="EditUser_PreRender" width="100%">
                     <asp:TableRow>
                         <asp:TableCell CssClass="fieldlabel"><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_UserName%>"></asp:Localize></asp:TableCell>
-                        <asp:TableCell CssClass="field"><asp:Literal ID="litUsername" runat="Server" Text="<%# SelectedUser.UserName %>"/></asp:TableCell>
-                    </asp:TableRow>
-                     <asp:TableRow Height="10px">
-                        <asp:TableCell></asp:TableCell>
-                        <asp:TableCell></asp:TableCell>
+                        <asp:TableCell CssClass="field"><asp:TextBox ID="litUsername" disabled="true" runat="Server" SkinID="admin" Text="<%# SelectedUser.UserName %>"/></asp:TableCell></asp:TableRow>
+                    <asp:TableRow Height="10px">
+                        <asp:TableCell CssClass="fieldlabel"><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_Address%>"></asp:Localize></asp:TableCell>
+                        <asp:TableCell CssClass="field"><asp:TextBox ID="txtAddress" runat="Server" SkinID="admin" Text="<%# SelectedUser.UserName %>"/></asp:TableCell></asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell CssClass="fieldlabel"><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_Email%>"></asp:Localize></asp:TableCell><asp:TableCell CssClass="field"><asp:TextBox ID="txtEmail" runat="Server" SkinID="admin"></asp:TextBox></asp:TableCell></asp:TableRow><asp:TableRow>
+                        <asp:TableCell CssClass="fieldlabel"><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_Comment%>"></asp:Localize></asp:TableCell><asp:TableCell CssClass="field"><asp:TextBox ID="txtComment" runat="Server" SkinID="admin"></asp:TextBox></asp:TableCell></asp:TableRow><asp:TableRow>
+                        <asp:TableCell CssClass="fieldlabel"><asp:Localize ID="Localize3" runat="server" Text="<%$ Resources:stringsRes, adm_Users_IsApproved%>"></asp:Localize></asp:TableCell><asp:TableCell CssClass="field"><asp:CheckBox ID="chkIsApproved" runat="Server" /></asp:TableCell>
                     </asp:TableRow>
                     <asp:TableRow>
-                        <asp:TableCell CssClass="fieldlabel"><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_Email%>"></asp:Localize></asp:TableCell>
-                        <asp:TableCell CssClass="field"><asp:TextBox ID="txtEmail" runat="Server" SkinID="admin"></asp:TextBox></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell CssClass="fieldlabel"><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_Comment%>"></asp:Localize></asp:TableCell>
-                        <asp:TableCell CssClass="field"><asp:TextBox ID="txtComment" runat="Server" SkinID="admin"></asp:TextBox></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell CssClass="fieldlabel"><asp:Localize ID="Localize3" runat="server" Text="<%$ Resources:stringsRes, adm_Users_IsApproved%>"></asp:Localize></asp:TableCell>
-                        <asp:TableCell CssClass="field"><asp:CheckBox ID="chkIsApproved" runat="Server" ></asp:Checkbox></asp:TableCell>
-                    </asp:TableRow>
-                    <asp:TableRow>
-                        <asp:TableCell CssClass="fieldlabel"><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_IsAdministrator%>"></asp:Localize></asp:TableCell>
-                        <asp:TableCell CssClass="field"><asp:CheckBox ID="chkAdmin" runat="Server" ></asp:Checkbox></asp:TableCell>
+                        <asp:TableCell CssClass="fieldlabel"><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_IsAdministrator%>"></asp:Localize></asp:TableCell><asp:TableCell CssClass="field"><asp:CheckBox ID="chkAdmin" runat="Server" /></asp:TableCell>
                     </asp:TableRow>
                      <asp:TableRow>
-                        <asp:TableCell CssClass="fieldlabel"><asp:Localize ID="Localize2" runat="server" Text="<%$ Resources:stringsRes, adm_Users_IsPowerUser%>"></asp:Localize></asp:TableCell>
-                        <asp:TableCell CssClass="field"><asp:CheckBox ID="chkPowerUser" runat="Server" ></asp:Checkbox></asp:TableCell>
+                        <asp:TableCell CssClass="fieldlabel"><asp:Localize ID="Localize2" runat="server" Text="<%$ Resources:stringsRes, adm_Users_IsPowerUser%>"></asp:Localize></asp:TableCell><asp:TableCell CssClass="field"><asp:CheckBox ID="chkPowerUser" runat="Server" /></asp:TableCell>
                     </asp:TableRow>   
                     <asp:TableRow>
-						<asp:TableCell></asp:TableCell>
-                        <asp:TableCell><asp:Button ID="btnCancel" runat="Server" Text="<%$ Resources:stringsRes, glb__Cancel%>" OnClick="btnUpdateCancel_Click" CausesValidation="false"></asp:Button>&nbsp;<asp:Button ID="btnSave" runat="Server" Text="<%$ Resources:stringsRes, glb__Save%>" OnClick="btnUpdateSave_Click" CausesValidation="false"></asp:Button></asp:TableCell>
-                    </asp:TableRow>
-                </asp:Table>
-            </fieldset>
-            </td>
-        </tr>
-        <tr runat="server" id="trCreateUser">
+						<asp:TableCell></asp:TableCell><asp:TableCell><asp:Button ID="btnCancel" runat="Server" Text="<%$ Resources:stringsRes, glb__Cancel%>" OnClick="btnUpdateCancel_Click" CausesValidation="false"></asp:Button>&nbsp;<asp:Button ID="btnSave" runat="Server" Text="<%$ Resources:stringsRes, glb__Save%>" OnClick="btnUpdateSave_Click" CausesValidation="false"></asp:Button></asp:TableCell></asp:TableRow></asp:Table></fieldset> </td></tr><tr runat="server" id="trCreateUser">
             <td>
-                <fieldset><legend><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_CreateUser%>"></asp:Localize>&nbsp;</legend>
-                <Table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <fieldset><legend><asp:Localize runat="server" Text="<%$ Resources:stringsRes, adm_Users_CreateUser%>"></asp:Localize>&nbsp;</legend><table border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
                         <td height="20"></td>
                     </tr>
@@ -113,6 +93,7 @@
                             EmailLabelText="<%$ Resources:stringsRes, ctl_CreateUserWizard_Email%>"
                             CreateUserButtonText="<%$ Resources:stringsRes, ctl_CreateUserWizard_CreateUser%>"
                             ToolTip="<%$ Resources:stringsRes, ctl_CreateUserWizard_CreateUser%>"
+                                AddressLabelText="<%$ Resources:stringsRes, ctl_CreateUserWizard_address%>"
                             DuplicateEmailErrorMessage="<%$ Resources:stringsRes, ctl_CreateUserWizard_DuplicateEmail%>"
                             ContinueDestinationPageUrl="~/Administration/Users.aspx"
                             >
@@ -130,9 +111,7 @@
                                 <ContentTemplate>
                                     <table width="100%" border="0">
                                         <tr>
-                                            <td align="center" ><asp:Localize ID="Localize1" runat="server" Text=" <%$ Resources:stringsRes, ctl_CreateUserWizard_CreateUserSucessful %>"></asp:Localize></td>
-                                        </tr>
-                                        <tr>
+                                            <td align="center" ><asp:Localize ID="Localize1" runat="server" Text=" <%$ Resources:stringsRes, ctl_CreateUserWizard_CreateUserSucessful %>"></asp:Localize></td></tr><tr>
                                             <td>
                                             <asp:Button id="ContinueButton" commandname="Continue" runat="server" Text="<%$ Resources:stringsRes, ctl_CreateUserWizard_CreateUserButtonDone %>" ValidationGroup="CreateUserWizard"/>
                                             </td>
@@ -144,15 +123,12 @@
                         </asp:CreateUserWizard>
                         </td>
                     </tr>
-                </Table>
+                </table>
                 </fieldset>
-            </td>
-        </tr>
-        <tr runat="server" id="trSendUserPassword">
+              </td></tr><tr runat="server" id="trSendUserPassword">
             <td>
             <fieldset><legend><asp:Label ID="lblApplicationName" runat="server" 
-    Text="<%$ Resources:StringsRes, ctl_RecoverPassword_Legend %>" /> &nbsp;</legend>
-            <Table border="0" cellpadding="0" cellspacing="0" width="100%">
+    Text="<%$ Resources:StringsRes, ctl_RecoverPassword_Legend %>" /> &nbsp;</legend><table border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
                         <td height="20"></td>
                     </tr>
@@ -167,18 +143,5 @@
                                     <asp:WizardStep runat="server" Title="Username" ID="stpUsername">
                                         <asp:ValidationSummary DisplayMode="List" EnableClientScript="true" EnableTheming="True" ID="ValidationSummary1" runat="server">
                                         </asp:ValidationSummary>
-                                        <asp:TextBox ID="txtUsername" runat="server" ValidationGroup="RecoverPasswordWizard"></asp:TextBox>
-                                        <asp:RequiredFieldValidator Display="None" ID="RequiredUsernameValidator" runat="server" ErrorMessage="<%$ Resources:StringsRes, ctl_CreateUserWizard_PasswordRequired %>" ControlToValidate="txtUsername"></asp:RequiredFieldValidator>
-                                    </asp:WizardStep>
-                                    <asp:WizardStep StepType="Complete"><asp:Label ID="lblResult" runat="Server"></asp:Label></asp:WizardStep>
-                                </WizardSteps>
-                            </asp:Wizard>
-                       </td>
-                    </tr>
-               </table>
-            </fieldset>
-            </td>
-         </tr>
-    </table>
-    <asp:ObjectDataSource runat="server" ID="srcUsersGrid" TypeName="System.Web.Security.Membership" SelectMethod="GetAllUsers"></asp:ObjectDataSource>
+                                        <asp:TextBox ID="txtUsername" runat="server" ValidationGroup="RecoverPasswordWizard"></asp:TextBox><asp:RequiredFieldValidator Display="None" ID="RequiredUsernameValidator" runat="server" ErrorMessage="<%$ Resources:StringsRes, ctl_CreateUserWizard_PasswordRequired %>" ControlToValidate="txtUsername"></asp:RequiredFieldValidator></asp:WizardStep><asp:WizardStep StepType="Complete"><asp:Label ID="lblResult" runat="Server"></asp:Label></asp:WizardStep></WizardSteps></asp:Wizard></td></tr></table></fieldset> </td></tr></table><asp:ObjectDataSource runat="server" ID="srcUsersGrid" TypeName="System.Web.Security.Membership" SelectMethod="GetAllUsers"></asp:ObjectDataSource>
 </asp:Content>

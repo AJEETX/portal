@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<LogData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogEntries>
+    <LogEntry>
+      <PageTitle>/portal/administration/website.aspx</PageTitle>
+      <Created>Wednesday, 28 May 2014 5:42:04 PM</Created>
+      <Error>System.Web.HttpUnhandledException: Exception of type 'System.Web.HttpUnhandledException' was thrown. ---&gt; System.InvalidCastException: [A]System.Collections.Generic.List`1[Administration_WebSite+ThemeEntry] cannot be cast to [B]System.Collections.Generic.List`1[Administration_WebSite+ThemeEntry]. Type A originates from 'mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' in the context 'LoadNeither' at location 'C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll'. Type B originates from 'mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' in the context 'LoadNeither' at location 'C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll'.
+   at Administration_WebSite.OnPreRender(EventArgs e) in c:\Repos\portal\Administration\WebSite.aspx.cs:line 72
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.administration_website_aspx.ProcessRequest(HttpContext context) in c:\Users\ajeetkumar\AppData\Local\Temp\Temporary ASP.NET Files\portal\62102dcd\e8be4961\App_Web_ujlzn8xg.8.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</Error>
+      <ServerVariables>
+        <string>ALL_HTTP: HTTP_CACHE_CONTROL:max-age=0, HTTP_CONNECTION:keep-alive, HTTP_CONTENT_LENGTH:13992, HTTP_CONTENT_TYPE:application/x-www-form-urlencoded, HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, HTTP_ACCEPT_ENCODING:gzip,deflate,sdch, HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8, HTTP_COOKIE:ASP.NET_SessionId=s5lhvsv35giv2ya5o5t5o215; .ASPXFORMSAUTH=80CA4519532C8E71B42DDBBC72D1864514FF7C119EC7EA116B2931C36E3EEB7A0FE7F91E547DF97F944F326D7D69707142351CAEDB484512F9C1D0D82D3DEE33E59E1367E373366F7E7AACAA0E9ABA56C1D4679C722FC55CD077007A17B737CDE8957E601DD8750F0347C6945B03DE3AE9B0EC61, HTTP_HOST:localhost:62183, HTTP_REFERER:http://localhost:62183/portal/administration/website.aspx, HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36, HTTP_ORIGIN:http://localhost:62183, </string>
+        <string>ALL_RAW: Cache-Control: max-age=0, Connection: keep-alive, Content-Length: 13992, Content-Type: application/x-www-form-urlencoded, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Accept-Encoding: gzip,deflate,sdch, Accept-Language: en-US,en;q=0.8, Cookie: ASP.NET_SessionId=s5lhvsv35giv2ya5o5t5o215; .ASPXFORMSAUTH=80CA4519532C8E71B42DDBBC72D1864514FF7C119EC7EA116B2931C36E3EEB7A0FE7F91E547DF97F944F326D7D69707142351CAEDB484512F9C1D0D82D3DEE33E59E1367E373366F7E7AACAA0E9ABA56C1D4679C722FC55CD077007A17B737CDE8957E601DD8750F0347C6945B03DE3AE9B0EC61, Host: localhost:62183, Referer: http://localhost:62183/portal/administration/website.aspx, User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36, Origin: http://localhost:62183, </string>
+        <string>APPL_PHYSICAL_PATH: C:\Repos\portal\</string>
+        <string>AUTH_TYPE: Forms</string>
+        <string>AUTH_USER: admin</string>
+        <string>LOGON_USER: AJEET\ajeetkumar</string>
+        <string>REMOTE_USER: admin</string>
+        <string>CONTENT_LENGTH: 13992</string>
+        <string>CONTENT_TYPE: application/x-www-form-urlencoded</string>
+        <string>LOCAL_ADDR: ::1</string>
+        <string>PATH_INFO: /portal/administration/website.aspx</string>
+        <string>PATH_TRANSLATED: C:\Repos\portal\administration\website.aspx</string>
+        <string>REMOTE_ADDR: ::1</string>
+        <string>REMOTE_HOST: ::1</string>
+        <string>REQUEST_METHOD: POST</string>
+        <string>SCRIPT_NAME: /portal/administration/website.aspx</string>
+        <string>SERVER_NAME: localhost</string>
+        <string>SERVER_PORT: 62183</string>
+        <string>SERVER_PORT_SECURE: 0</string>
+        <string>SERVER_PROTOCOL: HTTP/1.1</string>
+        <string>URL: /portal/administration/website.aspx</string>
+        <string>HTTP_CACHE_CONTROL: max-age=0</string>
+        <string>HTTP_CONNECTION: keep-alive</string>
+        <string>HTTP_CONTENT_LENGTH: 13992</string>
+        <string>HTTP_CONTENT_TYPE: application/x-www-form-urlencoded</string>
+        <string>HTTP_ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</string>
+        <string>HTTP_ACCEPT_ENCODING: gzip,deflate,sdch</string>
+        <string>HTTP_ACCEPT_LANGUAGE: en-US,en;q=0.8</string>
+        <string>HTTP_COOKIE: ASP.NET_SessionId=s5lhvsv35giv2ya5o5t5o215; .ASPXFORMSAUTH=80CA4519532C8E71B42DDBBC72D1864514FF7C119EC7EA116B2931C36E3EEB7A0FE7F91E547DF97F944F326D7D69707142351CAEDB484512F9C1D0D82D3DEE33E59E1367E373366F7E7AACAA0E9ABA56C1D4679C722FC55CD077007A17B737CDE8957E601DD8750F0347C6945B03DE3AE9B0EC61</string>
+        <string>HTTP_HOST: localhost:62183</string>
+        <string>HTTP_REFERER: http://localhost:62183/portal/administration/website.aspx</string>
+        <string>HTTP_USER_AGENT: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36</string>
+        <string>HTTP_ORIGIN: http://localhost:62183</string>
+      </ServerVariables>
+    </LogEntry>
+    <LogEntry>
+      <PageTitle>/portal/UserRegistration.aspx</PageTitle>
+      <Created>Wednesday, 28 May 2014 10:06:25 PM</Created>
+      <Error>System.Web.HttpUnhandledException: Exception of type 'System.Web.HttpUnhandledException' was thrown. ---&gt; System.Net.Mail.SmtpException: Failure sending mail. ---&gt; System.Net.WebException: Unable to connect to the remote server ---&gt; System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 127.0.0.1:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception&amp; exception)
+   --- End of inner exception stack trace ---
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress&amp; address, Socket&amp; abortSocket, Socket&amp; abortSocket6, Int32 timeout)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, Int32 timeout, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at UserRegistration.createUserWizard_CreatedUser(Object sender, EventArgs e) in c:\Repos\portal\UserRegistration.aspx.cs:line 54
+   at System.Web.UI.WebControls.CreateUserWizard.OnCreatedUser(EventArgs e)
+   at System.Web.UI.WebControls.CreateUserWizard.AttemptCreateUser()
+   at System.Web.UI.WebControls.CreateUserWizard.OnNextButtonClick(WizardNavigationEventArgs e)
+   at System.Web.UI.WebControls.Wizard.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.WebControls.CreateUserWizard.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.WebControls.Wizard.WizardChildTable.OnBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   --- End of inner exception stack trace ---
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.userregistration_aspx.ProcessRequest(HttpContext context) in c:\Users\ajeetkumar\AppData\Local\Temp\Temporary ASP.NET Files\portal\62102dcd\e8be4961\App_Web_-dtaz3jm.2.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)</Error>
+      <ServerVariables>
+        <string>ALL_HTTP: HTTP_CACHE_CONTROL:max-age=0, HTTP_CONNECTION:keep-alive, HTTP_CONTENT_LENGTH:3487, HTTP_CONTENT_TYPE:application/x-www-form-urlencoded, HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, HTTP_ACCEPT_ENCODING:gzip,deflate,sdch, HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8, HTTP_COOKIE:ASP.NET_SessionId=ohcwwq55cduabq45ql1o1345, HTTP_HOST:localhost:62183, HTTP_REFERER:http://localhost:62183/portal/UserRegistration.aspx, HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36, HTTP_ORIGIN:http://localhost:62183, </string>
+        <string>ALL_RAW: Cache-Control: max-age=0, Connection: keep-alive, Content-Length: 3487, Content-Type: application/x-www-form-urlencoded, Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8, Accept-Encoding: gzip,deflate,sdch, Accept-Language: en-US,en;q=0.8, Cookie: ASP.NET_SessionId=ohcwwq55cduabq45ql1o1345, Host: localhost:62183, Referer: http://localhost:62183/portal/UserRegistration.aspx, User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36, Origin: http://localhost:62183, </string>
+        <string>APPL_PHYSICAL_PATH: C:\Repos\portal\</string>
+        <string>LOGON_USER: AJEET\ajeetkumar</string>
+        <string>CONTENT_LENGTH: 3487</string>
+        <string>CONTENT_TYPE: application/x-www-form-urlencoded</string>
+        <string>LOCAL_ADDR: ::1</string>
+        <string>PATH_INFO: /portal/UserRegistration.aspx</string>
+        <string>PATH_TRANSLATED: C:\Repos\portal\UserRegistration.aspx</string>
+        <string>REMOTE_ADDR: ::1</string>
+        <string>REMOTE_HOST: ::1</string>
+        <string>REQUEST_METHOD: POST</string>
+        <string>SCRIPT_NAME: /portal/UserRegistration.aspx</string>
+        <string>SERVER_NAME: localhost</string>
+        <string>SERVER_PORT: 62183</string>
+        <string>SERVER_PORT_SECURE: 0</string>
+        <string>SERVER_PROTOCOL: HTTP/1.1</string>
+        <string>URL: /portal/UserRegistration.aspx</string>
+        <string>HTTP_CACHE_CONTROL: max-age=0</string>
+        <string>HTTP_CONNECTION: keep-alive</string>
+        <string>HTTP_CONTENT_LENGTH: 3487</string>
+        <string>HTTP_CONTENT_TYPE: application/x-www-form-urlencoded</string>
+        <string>HTTP_ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</string>
+        <string>HTTP_ACCEPT_ENCODING: gzip,deflate,sdch</string>
+        <string>HTTP_ACCEPT_LANGUAGE: en-US,en;q=0.8</string>
+        <string>HTTP_COOKIE: ASP.NET_SessionId=ohcwwq55cduabq45ql1o1345</string>
+        <string>HTTP_HOST: localhost:62183</string>
+        <string>HTTP_REFERER: http://localhost:62183/portal/UserRegistration.aspx</string>
+        <string>HTTP_USER_AGENT: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36</string>
+        <string>HTTP_ORIGIN: http://localhost:62183</string>
+      </ServerVariables>
+    </LogEntry>
+  </LogEntries>
+</LogData>
